@@ -1,5 +1,3 @@
-# SRM-Public-Repo
+# React Example
 
-# React Exaple
-
-# Run On Local Server or visit https://logicaladmin.space
+# Clone and Run through /workspace directory
