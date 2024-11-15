@@ -1,0 +1,396 @@
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.sign-in-form form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.sign-in-form input {
+  width: 92.5%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sign-in-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sign-in-form button:hover {
+  background-color: #0056b3;
+}
+
+.sign-in-form h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-bar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.sign-out-button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sign-out-button:hover {
+  background-color: #003f7f;
+}
+
+.profile {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.profile:hover {
+  color: #000000;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin-top: 60px; /* Adjust for the height of the nav-bar */
+}
+
+.side-panel {
+  width: 200px;
+  height: 100%;
+  background-color: #ffffff; /* Faded blue */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-panel button {
+  width: 120%;
+  padding: 10px;
+  margin-bottom: 3px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+}
+
+.side-panel button:hover {
+  background-color: #0056b3;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.call-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.call-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.call-form input, .call-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.call-form textarea {
+  min-width: 95%;
+  max-width: 95%;
+  max-height: 200px; 
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.call-form input[type="date"] {
+  padding: 8px;
+  width: 98.5%;
+}
+
+.call-form input[type="text"] {
+  width: 98%;
+}
+
+.call-form input:focus, .call-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.call-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.call-form button:hover {
+  background-color: #0056b3;
+}
+
+.call-history {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.call-history input {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.call-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.call-history th, .call-history td {
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.call-history td {
+  font-size: 12px; /* Smaller text */
+}
+
+.call-history th {
+  background-color: #f4f4f4;
+}
+
+.call-history tr:nth-child(even), .order-history tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.call-history button {
+  width: 90px;
+  padding: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.call-history button:hover {
+  background-color: #0056b3;
+}
+
+.newcallbtn {
+  float: right;
+  margin-left: 10px;
+}
+
+.closebtn {
+  float: right;
+  font-size: 8px;
+  text-align: center;
+  padding: 1px;
+  width: 20px;
+}
+
+.metric {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.metric input {
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.metric button {
+  width: 75px;
+  padding: 6px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.metric button:hover {
+  background-color: #0056b3;
+}
+
+.graphcont {
+  background-color: rgb(230, 230, 230);
+  padding: 20px;
+  border-radius: 5px;
+  max-height: 450px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.ccqg {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ccnb {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.frm1 {
+  width: 100%;
+  height: 1200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.frm2 {
+  width: 100%;
+  height: 1200px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
